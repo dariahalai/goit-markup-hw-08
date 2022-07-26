@@ -1,0 +1,9 @@
+.cards-set{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    &__card{
+        flex-basis: calc((100% - 60px) / 3);
+        background-color: var(--secondary-background-color);
+    }
+}

@@ -1,0 +1,40 @@
+.modal{
+    position: absolute;
+    padding: 40px;
+    top: 50%;
+    left: 50%;
+    min-width: 528px;
+    min-height: 581px;
+    background-color:var(--white-color);
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &__btn{
+        position: absolute;
+        display: flex;
+        top: 8px;
+        right: 8px;
+        width:30px;
+        height: 30px;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        fill: #000000;
+        background-color: transparent;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    &__title{
+        margin-bottom: 12px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+    }
+    &__btn-icon:hover,&__btn-icon:focus{
+    cursor: pointer;
+    fill: var(--color-of-active);
+    }
+}
+
+
