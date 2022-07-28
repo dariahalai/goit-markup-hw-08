@@ -1,21 +1,19 @@
 .features-list{
-    display:inline-flex; 
     &__item{
-        width: 270px;
-        &:not(:nth-of-type(1)){
-            margin-left: 30px;
+        &:not(:first-child){
+            margin-top: 30px;
         }
     }
     &__icon{
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 270px;
         height: 120px;
         background-color:var(--color-btn);
         margin-bottom: 30px;
     }
     &__title{
+        text-align: center;
         text-transform: uppercase;
         font-size: 14px;
         line-height: 1.14;

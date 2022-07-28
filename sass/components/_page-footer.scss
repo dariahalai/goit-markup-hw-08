@@ -3,24 +3,37 @@
     padding: 60px 0;
     &__info{
         display: flex;
-        align-items: baseline;
+        flex-direction: column;
+      align-items: center;
     }
     &__logo{
+        display: flex;
+        justify-content: center;
         color:var(--white-color);
     }
     &__logo-web{
         color: var(--color-of-active);
     }
     &__contacts{
+        display: flex;
+        flex-direction: column;
+      align-items: center;
         margin-top: 20px;
+        margin-bottom: 60px;
     }
     &__social-link{
-        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+        margin-bottom: 60px;
     }
     &__social-list{ 
         margin-top: 20px; 
     }
     &__signup-field{
-        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+      align-items: center;
+       
     }
 }
