@@ -56,12 +56,12 @@
                             </a>
                         </li>
                     </ul> 
-                    <div class="social-line overlay-menu__social-line">
-                        <span class="social-line__item"><a href="" class="social-line__link">Instagram</a></span>
-                        <span class="social-line__item"><a href="" class="social-line__link">Twitter</a></span>
-                        <span class="social-line__item"><a href="" class="social-line__link">Facebook</a></span>
-                        <span class="social-line__item"><a href="" class="social-line__link">LinkedIn</a></span>
-                    </div>
+                    <ul class="social-line overlay-menu__social-line">
+                        <li class="social-line__item"><a href="" class="social-line__link">Instagram</a></li>
+                        <li class="social-line__item"><a href="" class="social-line__link">Twitter</a></li>
+                        <li class="social-line__item"><a href="" class="social-line__link">Facebook</a></li>
+                        <li class="social-line__item"><a href="" class="social-line__link">LinkedIn</a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
@@ -390,15 +390,15 @@
                 </ul>
             </div>
             <div class="signup-field page-footer__signup-field">
-                <b class="signup-field__title">Підписатись на розсилку</b>
-                <div class="signup-field__form">
-                    <input class="signup-field__input" type="text" placeholder="E-mail">
+                <form class="signup-field__form">
+                    <label class="signup-field__label" for="e-mail">Підписатись на розсилку</label>
+                    <input class="signup-field__input" type="e-mail" placeholder="E-mail" id="e-mail">
                     <button class="btn" type="submit">Підписатись
                         <svg class="btn__icon" width="24" height="24">
                             <use href="./images/sprite.svg#icon-send"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     </footer>

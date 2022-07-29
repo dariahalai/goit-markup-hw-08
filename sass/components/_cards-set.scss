@@ -1,9 +1,18 @@
 .cards-set{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
     &__card{
-        flex-basis: calc((100% - 60px) / 3);
+        width: 100%;
         background-color: var(--secondary-background-color);
+        @media screen and (min-width:768px){
+            width: 354px;
+            flex-basis: (calc(100% - 60px)/2);
+        }
+        @media screen and (min-width:1200px){
+            width:370px;
+            flex-basis: calc((100% - 60px) / 3);
+        }
     }
 }

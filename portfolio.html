@@ -12,33 +12,58 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <header class="page-header">
-        <nav class=" container page-header__nav">
-            <a href="./index.html" class="logo page-header__logo"><span class="page-header__logo-web">Web</span>Studio</a>
-            <ul class="site-nav">
-                <li class="site-nav__item"><a  class="site-nav__link" href="./index.html" >Студія</a></li>
-                <li class="site-nav__item"><a  class="site-nav__link site-nav__link--current" href="./portfolio.html" >Портфоліо</a></li>
-                <li class="site-nav__item"><a  class="site-nav__link" href="" >Контакти</a></li>
-            </ul>
-            <ul class="auth-nav page-header__auth-nav">
-                <li class="auth-nav__item">                    
-                    <a  class="auth-nav__link" href="mailto:info@devstudio.com">
-                        <svg class="auth-nav__icon"   width="16" height="12">
-                            <use href="./images/sprite.svg#icon-email" ></use>
+    <header class="page-header"> 
+        <div class="container page-header__container ">
+            <nav class="page-header__nav">
+                <a href="./index.html" class="logo page-header__logo"><span class="page-header__logo-web">Web</span>Studio</a>
+                <button type="button" class="page-header__btn is-open" 
+                aria-expanded="true"
+                aria-controls="overlay-menu"    
+                data-menu-button-open>
+                    <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                        <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="overlay-menu is-open" id="overlay-menu" data-menu >
+                    <button type="button" class="overlay-menu__btn is-close" 
+                    aria-expanded="false" 
+                    data-menu-button-close>
+                        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                            <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
                         </svg>
-                        <span>info@devstudio.com</span>
-                    </a>
-                </li>
-                <li class="auth-nav__item">
-                    <a  class="auth-nav__link" href="tel:+380961111111" >
-                        <svg class="auth-nav__icon"  width="10" height="16">                                
-                            <use href="./images/sprite.svg#icon-phone"></use>
-                        </svg>
-                        <span>+38 096 111 11 11</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>       
+                    </button>
+                    <ul class="site-nav">
+                        <li class="site-nav__item"><a  class="site-nav__link " href="./index.html" >Студія</a></li>
+                        <li class="site-nav__item"><a  class="site-nav__link site-nav__link--current" href="./portfolio.html" >Портфоліо</a></li>
+                        <li class="site-nav__item"><a  class="site-nav__link" href="" >Контакти</a></li>
+                    </ul>
+                    <ul class="auth-nav page-header__auth-nav">
+                        <li class="auth-nav__item">
+                            <a  class="auth-nav__link" href="tel:+380961111111" >
+                                <svg class="auth-nav__icon"  width="10" height="16">                                
+                                    <use href="./images/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <span>+38 096 111 11 11</span>
+                            </a>
+                        </li>
+                        <li class="auth-nav__item">                    
+                            <a  class="auth-nav__link" href="mailto:info@devstudio.com">
+                                <svg class="auth-nav__icon"   width="16" height="12">
+                                    <use href="./images/sprite.svg#icon-email" ></use>
+                                </svg>
+                                <span>info@devstudio.com</span>
+                            </a>
+                        </li>
+                    </ul> 
+                    <ul class="social-line overlay-menu__social-line">
+                        <li class="social-line__item"><a href="" class="social-line__link">Instagram</a></li>
+                        <li class="social-line__item"><a href="" class="social-line__link">Twitter</a></li>
+                        <li class="social-line__item"><a href="" class="social-line__link">Facebook</a></li>
+                        <li class="social-line__item"><a href="" class="social-line__link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <section class="section portfolio-section">
@@ -60,7 +85,7 @@
                                     <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                                 </div>
                             </div>
-                            <div class="card__title">
+                            <div class="card__title card__title--first-card">
                                 <h2 class="card__name">Технокряк</h2>
                                 <p class="card__descr">Веб-сторінка</p> 
                             </div>
@@ -182,6 +207,7 @@
            </div>
         </section>
     </main>
+
     <footer class="page-footer">
         <div class="container page-footer__info">
             <div>
@@ -228,15 +254,15 @@
                 </ul>
             </div>
             <div class="signup-field page-footer__signup-field">
-                <b class="signup-field__title">Підписатись на розсилку</b>
-                <div class="signup-field__form">
-                    <input class="signup-field__input" type="text" placeholder="E-mail">
+                <form class="signup-field__form">
+                    <label class="signup-field__label" for="e-mail">Підписатись на розсилку</label>
+                    <input class="signup-field__input" type="e-mail" placeholder="E-mail" id="e-mail">
                     <button class="btn" type="submit">Підписатись
                         <svg class="btn__icon" width="24" height="24">
                             <use href="./images/sprite.svg#icon-send"></use>
                         </svg>
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     </footer>

@@ -1,4 +1,6 @@
 .social-line{
+    display: flex;
+    justify-content: left;
 &__link{
     font-weight: 500;
     font-size: 18px;
@@ -7,10 +9,10 @@
     color: var(--color-of-active);
     text-decoration: none;
 }
-&__item:not(:first-child)::before{
-    content: "";
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    transform: rotate(90deg);
-    margin: 0 10px;
+&__item:not(:last-child){
+    padding-right: 10px;
+    border-right: 1px solid rgba(33,33,33,.2);
 }
+&__item:not(:first-child){
+    padding-left: 10px;}
 }

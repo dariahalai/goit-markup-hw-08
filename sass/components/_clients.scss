@@ -1,10 +1,15 @@
 .clients{
     margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     
     &__item{
-        width: (calc(100% - 2 * 30px)/2);
-    &:not(:nth-of-type(1)){
-        margin-top: 30px;
+       &:nth-child(2n+1) {
+        margin-right: 30px;
+        }
+        &:not(:first-child){
+            margin-bottom: 30px;
     }}
    
 
