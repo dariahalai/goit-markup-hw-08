@@ -36,13 +36,12 @@
             @media screen and (min-width:1200px){
                 width:170px;
             }
-        }
-      
-           
             &:hover,&:focus{
                 fill:var(--color-of-active);
                 border-color: var(--color-of-active);
             }
+        }
+    
     }
 
 

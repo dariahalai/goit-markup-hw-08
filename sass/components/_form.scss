@@ -1,5 +1,5 @@
 .form{
-    width: 448px;
+   
     &__label {
         position: relative;
         display: flex;
@@ -69,6 +69,11 @@
         justify-content: center;
     }
     &__checkbox-text{
+        @media screen and (max-width:1199px) {
+            font-size: 12px;
+            line-height: 1.16;
+            
+        }
         margin-left: 8px;
         line-height: 1.71;
         color: var(--secondary-text-color);
