@@ -1,5 +1,7 @@
 .signup-field{
-
+    @media screen and (max-width:1199px) {
+     text-align: center;   
+    }
     &__label{
         display: block;
         font-weight: 700;
@@ -9,6 +11,11 @@
         margin-bottom: 20px;
     }
     &__input{
+        @media screen and (min-width:1200px) {
+            width: 358px;
+            margin-bottom: 0;
+            margin-right: 8px;
+        }
         margin-bottom: 20px;
         width: 100%;
         height: 50px;
@@ -32,8 +39,11 @@
         }
     }
     &__form{
+        @media screen and (min-width:1200px) {
+            margin-top: 20px;
+        }
         text-align: center;
-        margin-top: 20px;
+        margin-top: 20px; 
     }
 }
 

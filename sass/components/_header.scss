@@ -1,21 +1,52 @@
 .page-header{
     border-bottom: 1px solid var(--border-color-header);
+    @media screen and (max-width: 767px){
+    padding-top: 16px;
+    padding-bottom: 16px;
+    }   
+    &__logo{
+        @media screen and (min-width:768px) {
+            margin-right: 88px;
+        }
+        @media screen and (min-width:1200px) {
+            margin-right: 93px;
+        }
+    }
+    &__container{
+    .page-header__nav{
+        @media screen and (max-width: 767px){
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 60px;
+        }
+        @media screen and (min-width: 768px){
+            display: flex;
+            padding-top: 21px;
+            padding-bottom: 21px;
+            align-items: center;
+        }
+    }
+    }
     &__logo-web{
         color: var(--color-of-active);
     }
-    &__nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        min-height: 60px;
-    }
-    // &__container{
-    //     position: relative;
-    //     display: flex;
-    //     align-items: center;
+    // &__nav{
+    //     @media screen and (max-width: 767px){
+    //         display: flex;
+    //         align-items: center;
+    //     }
+    //     @media screen and (min-width:768px) {
+    //         display: flex;
+    //         align-items: center;
+    //         z-index: 0;
+    //        }
     // }
-
     &__btn{
+         @media screen and (min-width:768px) {
+        display: none;  
+        }
         display: inline-flex;
         margin: 0;
         padding: 0;
@@ -26,21 +57,9 @@
             fill: var(--color-of-active);
         }
     }
-    //     &:hover,&:focus{
-    //         fill: var(--color-of-active);
-    //     }
-    //     & .icon-cross{
-    //         display: none;
-    //     }
-    //     &.is-open .icon-cross{
-    //         display: block;
-    //     }
-    //     &.is-open .icon-menu{
-    //         display: none;
-    //     }
+    // &__auth-nav{
+        
     // }
-    // &__nav{
-    //     margin: 48px 83px 48px 40px;
-    // }
+
 }
 

@@ -15,7 +15,7 @@
   });
   menuCloseBtn.addEventListener("click", () => {
     const expanded =
-      menuCloseBtn.getAttribute("aria-expanded") === "true" || false;
+      menuCloseBtn.getAttribute("aria-expanded") === "false" || true;
 
     menuCloseBtn.classList.toggle("is-close");
     menuCloseBtn.setAttribute("aria-expanded", !expanded);

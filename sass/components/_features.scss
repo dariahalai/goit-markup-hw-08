@@ -1,8 +1,22 @@
 .features-list{
+    margin-bottom: -30px;
+    margin-left: -30px;
+    display: flex;
+    flex-wrap: wrap;
     &__item{
-        &:not(:first-child){
-            margin-top: 30px;
+        @media screen and (min-width:320px){
+            
+            margin-bottom: 30px;
+            margin-left: 30px;
         }
+        @media screen and (min-width:768px){
+            width: 354px;
+        }
+        @media screen and (min-width:1200px){
+            width:270px;
+        }
+      
+    
     }
     &__icon{
         display: flex;
