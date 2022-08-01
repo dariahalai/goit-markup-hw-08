@@ -8,27 +8,27 @@ $hero-gradient:linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4));
     max-height: 600px;
 
     @media screen and (max-width:767px) {
-    background-image: $hero-gradient, url(../../images/Студия/hero-480.jpg);
+    background-image: $hero-gradient, url(../images/Студия/hero-480.jpg);
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: $hero-gradient, url(../../images/Студия/hero-480@2x.jpg);
+        background-image: $hero-gradient, url(../images/Студия/hero-480@2x.jpg);
     }
     }
     @media screen and (min-width:768px) {
-    background-image: $hero-gradient, url(../../images/Студия/hero-768.jpg);
+    background-image: $hero-gradient, url(../images/Студия/hero-768.jpg);
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: $hero-gradient, url(../../images/Студия/hero-768@2x.jpg);
+        background-image: $hero-gradient, url(../images/Студия/hero-768@2x.jpg);
     }
     }
     @media screen and (min-width:1200px) {
-    background-image: $hero-gradient, url(../../images/Студия/hero-1660.jpg);
+    background-image: $hero-gradient, url(../images/Студия/hero-1660.jpg);
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: $hero-gradient, url(../../images/Студия/hero-1660@2x.jpg);
+        background-image: $hero-gradient, url(../images/Студия/hero-1660@2x.jpg);
     }
     }
     
