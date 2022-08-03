@@ -20,6 +20,9 @@
         display: flex;
         justify-content: center;
         color:var(--white-color);
+        @media screen and (min-width:1200px) {
+        justify-content: flex-start;
+        }
     }
     &__logo-web{
         color: var(--color-of-active);
@@ -30,6 +33,10 @@
         align-items: center;
         margin-top: 20px;
         margin-bottom: 60px;
+        @media screen and (min-width:1200px) {
+          margin-bottom: 0;
+          align-items: flex-start;
+        }
     }
     &__social-link{
       text-align: center;
@@ -50,7 +57,7 @@
     &__signup-field{
       align-items: center;
       @media screen and (min-width:1200px) {
-        margin-left: 93px;
+        margin-left:auto;
     }
   }
 }

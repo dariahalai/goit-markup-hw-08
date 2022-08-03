@@ -1,5 +1,6 @@
 .card{
     &__link{
+    outline: transparent;
     display: block;
     color: var(--main-text-color);
     text-decoration: none;
@@ -51,7 +52,8 @@
     font-size: 18px;
     line-height: 1.6;
     padding: 63px 24px; 
-    .card__link:hover &{
+    .card__link:hover &,
+    .card__link:focus &{
     transform: translateY(0);
 }
 }

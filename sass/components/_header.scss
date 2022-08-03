@@ -1,20 +1,13 @@
 .page-header{
     position: relative;
     border-bottom: 1px solid var(--border-color-header);
-    @media screen and (max-width: 767px){
-    padding-top: 16px;
-    padding-bottom: 16px;
-    }   
-    &__logo{
+
+    &__auth-nav{
         @media screen and (min-width:768px) {
-            margin-right: 88px;
-        }
-        @media screen and (min-width:1200px) {
-            margin-right: 93px;
+            margin-left: auto;
         }
     }
     &__container{
-    .page-header__nav{
         @media screen and (max-width: 767px){
             display: flex;
             align-items: center;
@@ -23,11 +16,9 @@
         }
         @media screen and (min-width: 768px){
             display: flex;
-            padding-top: 21px;
-            padding-bottom: 21px;
             align-items: center;
+            min-height: 80px;
         }
-    }
     }
     &__logo-web{
         color: var(--color-of-active);
@@ -46,9 +37,5 @@
             fill: var(--color-of-active);
         }
     }
-    // &__auth-nav{
-        
-    // }
-
 }
 

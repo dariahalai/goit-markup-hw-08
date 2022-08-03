@@ -15,55 +15,55 @@
 <body>
     <header class="page-header"> 
         <div class="container page-header__container ">
-            <nav class="page-header__nav">
-                <a href="./index.html" class="logo page-header__logo"><span class="page-header__logo-web">Web</span>Studio</a>
-                <button type="button" class="page-header__btn is-open" 
-                    aria-expanded="true"
-                    aria-controls="overlay-menu" 
-                    data-menu-button-open>
-                        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-                            <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
-                        </svg>
-                </button>
-                <div class="overlay-menu" id="overlay-menu" data-menu >
-                    <button type="button" class="overlay-menu__btn is-close" 
+            <a href="./index.html" class="logo page-header__logo"><span class="page-header__logo-web">Web</span>Studio</a>
+            <button type="button" class="page-header__btn is-open" 
+                aria-expanded="true"
+                aria-controls="overlay-menu" 
+                data-menu-button-open>                        
+                <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                    <use class="icon-menu" href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <div class="overlay-menu" id="overlay-menu" data-menu >
+                <button type="button" class="overlay-menu__btn is-close" 
                     aria-expanded="false" 
                     data-menu-button-close>
-                        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-                            <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
-                        </svg>
-                    </button>
-                        <ul class="site-nav ">
-                            <li class="site-nav__item"><a  class="site-nav__link site-nav__link--current" href="./index.html" >Студія</a></li>
-                            <li class="site-nav__item"><a  class="site-nav__link" href="./portfolio.html" >Портфоліо</a></li>
-                            <li class="site-nav__item"><a  class="site-nav__link" href="" >Контакти</a></li>
-                        </ul>
-                        <ul class="auth-nav ">
-                            <li class="auth-nav__item">
-                                <a  class="auth-nav__link" href="tel:+380961111111" >
-                                    <svg class="auth-nav__icon"  width="10" height="16">                                
-                                        <use href="./images/sprite.svg#icon-phone"></use>
-                                    </svg>
-                                    <span>+38 096 111 11 11</span>
-                                </a>
-                            </li>
-                            <li class="auth-nav__item">                    
-                                <a  class="auth-nav__link" href="mailto:info@devstudio.com">
-                                    <svg class="auth-nav__icon"   width="16" height="12">
-                                        <use href="./images/sprite.svg#icon-email" ></use>
-                                    </svg>
-                                    <span>info@devstudio.com</span>
-                                </a>
-                            </li>
-                        </ul> 
-                        <ul class="social-line overlay-menu__social-line">
-                            <li class="social-line__item"><a href="" class="social-line__link">Instagram</a></li>
-                            <li class="social-line__item"><a href="" class="social-line__link">Twitter</a></li>
-                            <li class="social-line__item"><a href="" class="social-line__link">Facebook</a></li>
-                            <li class="social-line__item"><a href="" class="social-line__link">LinkedIn</a></li>
-                        </ul>
-                    </div>
-             </nav>
+                    <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+                        <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
+                    </svg>
+                </button>
+                <nav class="page-header__nav">
+                    <ul class="site-nav ">
+                        <li class="site-nav__item"><a  class="site-nav__link site-nav__link--current" href="./index.html" >Студія</a></li>
+                        <li class="site-nav__item"><a  class="site-nav__link" href="./portfolio.html" >Портфоліо</a></li>
+                        <li class="site-nav__item"><a  class="site-nav__link" href="" >Контакти</a></li>
+                    </ul>
+                </nav>
+                <ul class="auth-nav page-header__auth-nav">
+                    <li class="auth-nav__item">
+                        <a  class="auth-nav__link" href="tel:+380961111111" >
+                            <svg class="auth-nav__icon"  width="10" height="16">                                
+                                <use href="./images/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <span>+38 096 111 11 11</span>
+                        </a>
+                    </li>
+                    <li class="auth-nav__item">                    
+                        <a  class="auth-nav__link" href="mailto:info@devstudio.com">
+                            <svg class="auth-nav__icon"   width="16" height="12">
+                                <use href="./images/sprite.svg#icon-email" ></use>
+                            </svg>
+                            <span>info@devstudio.com</span>
+                        </a>
+                    </li>
+                </ul> 
+                <ul class="social-line overlay-menu__social-line">
+                    <li class="social-line__item"><a href="" class="social-line__link">Instagram</a></li>
+                    <li class="social-line__item"><a href="" class="social-line__link">Twitter</a></li>
+                    <li class="social-line__item"><a href="" class="social-line__link">Facebook</a></li>
+                    <li class="social-line__item"><a href="" class="social-line__link">LinkedIn</a></li>
+                </ul>
+            </div>       
         </div>
     </header>
 
@@ -153,10 +153,17 @@
                 <h2 class="title team-section__title">Наша команда</h2>
                 <ul class="team">
                     <li class="employee-card">
-                        <img class="employee-card__photo" srcset="./images/Студия/Ihor_Demyanenko.jpg 1x,./images/Студия/Ihor_Demyanenko@2x.jpg 2x"
-                        src="./images/Студия/Ihor_Demyanenko.jpg" alt="Игорь Демьяненко Product Designer" width="270" height="260">
-                        <h3 class="employee-card__name">Ігор Дем`яненко</h3>
-                        <p class="employee-card__job-title">Product Designer</p>
+                        <picture class="employee-card__photo">
+                            <source srcset="./images/Студия/Ihor_Demyanenko-d.jpg 1x,./images/Студия/Ihor_Demyanenko-d@2x.jpg 2x" media="(min-width:1200px) ">
+                            <source srcset="./images/Студия/Ihor_Demyanenko-m.jpg 1x,./images/Студия/Ihor_Demyanenko-m@2x.jpg 2x" media="(max-width:767px)  ">
+                            <source srcset="./images/Студия/Ihor_Demyanenko-t.jpg 1x,./images/Студия/Ihor_Demyanenko-t@2x.jpg 2x" media="(min-width:768px) ">
+                            <img src="./images/Студия/Ihor_Demyanenko-d.jpg" alt="Ігор Дем'яненко-дизайнер продукту">
+                        </picture>
+                        <div class="employee-card__descr">
+                            <h3 class="employee-card__name">Ігор Дем`яненко</h3>
+                            <p class="employee-card__job-title">Product Designer</p>
+                        </div>
+
                         <ul class="social-list">
                             <li class="social-list__item">
                                 <a class="social-list__link" href="https://www.instagram.com">
@@ -189,10 +196,17 @@
                         </ul>
                     </li>
                     <li class="employee-card">
-                        <img class="employee-card__photo" srcset="./images/Студия/Olga_Repyna.jpg 1x,./images/Студия/Olga_Repyna@2x.jpg 2x"
-                        src="./images/Студия/Olga_Repyna.jpg" alt="Ольга Репина Frontend Developer" width="270" height="260">
-                        <h3 class="employee-card__name">Ольга Репіна</h3>
-                        <p class="employee-card__job-title">Frontend Developer</p>
+                        <picture class="employee-card__photo">
+                            <source srcset="./images/Студия/Olga_Repyna-d.jpg 1x,./images/Студия/Olga_Repyna-d@2x.jpg 2x" media="(min-width:1200px) ">
+                            <source srcset="./images/Студия/Olga_Repyna-m.jpg 1x,./images/Студия/Olga_Repyna-m@2x.jpg 2x" media="(max-width:767px)  ">
+                            <source srcset="./images/Студия/Olga_Repyna-t.jpg 1x,./images/Студия/Olga_Repyna-t@2x.jpg 2x" media="(min-width:768px) ">
+                            <img src="./images/Студия/Olga_Repyna-d.jpg" alt="Ольга Репіна-розробник">
+                        </picture>
+                        <div class="employee-card__descr">
+                            <h3 class="employee-card__name">Ольга Репіна</h3>
+                            <p class="employee-card__job-title">Frontend Developer</p>
+                        </div>
+
                         <ul class="social-list">
                             <li class="social-list__item">
                                 <a class="social-list__link" href="https://www.instagram.com">
@@ -225,10 +239,17 @@
                         </ul>
                     </li>
                     <li class="employee-card">
-                        <img class="employee-card__photo" srcset="./images/Студия/Mykolay_Tarasov.jpg 1x,./images/Студия/Mykolay_Tarasov@2x.jpg 2x"
-                        src="./images/Студия/Mykolay_Tarasov.jpg" alt="Николай Тарасов Marketing" width="270" height="260">
-                        <h3 class="employee-card__name">Микола Тарасов</h3>
-                        <p class="employee-card__job-title">Marketing</p>
+                         <picture class="employee-card__photo">
+                                    <source srcset="./images/Студия/Mykolay_Tarasov-d.jpg 1x,./images/Студия/Mykolay_Tarasov-d@2x.jpg 2x" media="(min-width:1200px) ">
+                                    <source srcset="./images/Студия/Mykolay_Tarasov-m.jpg 1x,./images/Студия/Mykolay_Tarasov-m@2x.jpg 2x" media="(max-width:767px)  ">
+                                    <source srcset="./images/Студия/Mykolay_Tarasov-t.jpg 1x,./images/Студия/Mykolay_Tarasov-t@2x.jpg 2x" media="(min-width:768px) ">
+                                    <img src="./images/Студия/Mykolay_Tarasov-d.jpg" alt="Микола Тарасов-відділ маркетингу">
+                                </picture>
+                                <div class="employee-card__descr">
+                                    <h3 class="employee-card__name">Микола Тарасов</h3>
+                                    <p class="employee-card__job-title">Marketing</p>
+                                </div>
+
                         <ul class="social-list">
                             <li class="social-list__item">
                                 <a class="social-list__link" href="https://www.instagram.com">
@@ -261,10 +282,17 @@
                         </ul>
                     </li>
                     <li class="employee-card">
-                        <img class="employee-card__photo" srcset="./images/Студия/Myhail_Ermakov.jpg 1x,./images/Студия/Myhail_Ermakov@2x.jpg 2x"
-                        src="./images/Студия/Myhail_Ermakov.jpg" alt="Михаил Ермаков UI Designer" width="270" height="260">
-                        <h3 class="employee-card__name">Михайло Єрмаков</h3>
-                        <p class="employee-card__job-title">UI Designer</p>
+                        <picture class="employee-card__photo">
+                            <source srcset="./images/Студия/Myhail_Ermakov-d.jpg 1x,./images/Студия/Myhail_Ermakov-d@2x.jpg 2x" media="(min-width:1200px) ">
+                            <source srcset="./images/Студия/Myhail_Ermakov-m.jpg 1x,./images/Студия/Myhail_Ermakov-m@2x.jpg 2x" media="(max-width:767px)  ">
+                            <source srcset="./images/Студия/Myhail_Ermakov-t.jpg 1x,./images/Студия/Myhail_Ermakov-t@2x.jpg 2x" media="(min-width:768px) ">
+                            <img src="./images/Студия/Myhail_Ermakov-d.jpg" alt="Михаил Ермаков-дизайнер">
+                        </picture>
+                        <div class="employee-card__descr">
+                            <h3 class="employee-card__name">Михайло Єрмаков</h3>
+                            <p class="employee-card__job-title">UI Designer</p>
+                        </div>
+                       
                         <ul class="social-list">
                             <li class="social-list__item">
                                 <a class="social-list__link" href="https://www.instagram.com">
@@ -353,7 +381,7 @@
 
     <footer class="page-footer">
         <div class="container page-footer__info">
-            <div>
+            <div class="page-footer__adress">
                 <a class="logo page-footer__logo" href="./index.html" ><span class="page-footer__logo-web">Web</span>Studio</a>
                 <address>
                     <ul class="contacts page-footer__contacts">

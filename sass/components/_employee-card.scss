@@ -26,7 +26,6 @@
         }
     }
     &__name{
-        margin-top: 30px;
         margin-bottom: 10px;
         text-align: center;
         font-size: 16px;
@@ -34,11 +33,14 @@
         line-height: 1.19;
     }
     &__job-title{
-        margin-bottom: 16px;
         text-align: center;
         color: var(--secondary-text-color);
         font-size: 16px;
         line-height: 1.19; 
+    }
+    &__descr{
+        margin-top: 30px;
+        margin-bottom: 16px;
     }
 }
 
