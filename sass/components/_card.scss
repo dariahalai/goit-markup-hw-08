@@ -15,6 +15,7 @@
             padding-bottom: 56px;
         }
     }
+    flex-basis:110px;
     padding: 20px 24px;
     border-right: 1px solid #EEEEEE; 
     border-left: 1px solid #EEEEEE;
@@ -35,6 +36,7 @@
 &__thumb{
     position:relative;
     overflow: hidden;
+    flex-grow: 1;
     }
     
 &__text{
