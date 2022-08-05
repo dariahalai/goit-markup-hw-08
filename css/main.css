@@ -162,6 +162,9 @@ body {
   position: relative;
   border-bottom: 1px solid var(--border-color-header);
 }
+.page-header__contacts {
+  margin-top: auto;
+}
 @media screen and (min-width: 768px) {
   .page-header__auth-nav {
     margin-left: auto;
@@ -229,11 +232,6 @@ body {
   color: var(--color-of-active);
 }
 
-@media screen and (max-width: 767px) {
-  .site-nav {
-    margin-bottom: 302px;
-  }
-}
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
@@ -419,9 +417,9 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
     z-index: 1;
-    position: absolute;
+    position: fixed;
     width: 100vw;
-    min-height: 850px;
+    min-height: 796px;
     max-height: 100vh;
     left: 0;
     top: 0;

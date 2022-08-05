@@ -39,30 +39,32 @@
                         <li class="site-nav__item"><a  class="site-nav__link" href="" >Контакти</a></li>
                     </ul>
                 </nav>
-                <ul class="auth-nav page-header__auth-nav">
-                    <li class="auth-nav__item">
-                        <a  class="auth-nav__link" href="tel:+380961111111" >
-                            <svg class="auth-nav__icon"  width="10" height="16">                                
-                                <use href="./images/sprite.svg#icon-phone"></use>
-                            </svg>
-                            <span>+38 096 111 11 11</span>
-                        </a>
-                    </li>
-                    <li class="auth-nav__item">                    
-                        <a  class="auth-nav__link" href="mailto:info@devstudio.com">
-                            <svg class="auth-nav__icon"   width="16" height="12">
-                                <use href="./images/sprite.svg#icon-email" ></use>
-                            </svg>
-                            <span>info@devstudio.com</span>
-                        </a>
-                    </li>
-                </ul> 
-                <ul class="social-line overlay-menu__social-line">
-                    <li class="social-line__item"><a href="" class="social-line__link">Instagram</a></li>
-                    <li class="social-line__item"><a href="" class="social-line__link">Twitter</a></li>
-                    <li class="social-line__item"><a href="" class="social-line__link">Facebook</a></li>
-                    <li class="social-line__item"><a href="" class="social-line__link">LinkedIn</a></li>
-                </ul>
+                <div class="page-header__contacts">
+                    <ul class="auth-nav page-header__auth-nav">
+                        <li class="auth-nav__item">
+                            <a  class="auth-nav__link" href="tel:+380961111111" >
+                                <svg class="auth-nav__icon"  width="10" height="16">                                
+                                    <use href="./images/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <span>+38 096 111 11 11</span>
+                            </a>
+                        </li>
+                        <li class="auth-nav__item">                    
+                            <a  class="auth-nav__link" href="mailto:info@devstudio.com">
+                                <svg class="auth-nav__icon"   width="16" height="12">
+                                    <use href="./images/sprite.svg#icon-email" ></use>
+                                </svg>
+                                <span>info@devstudio.com</span>
+                            </a>
+                        </li>
+                    </ul> 
+                    <ul class="social-line overlay-menu__social-line">
+                        <li class="social-line__item"><a href="" class="social-line__link">Instagram</a></li>
+                        <li class="social-line__item"><a href="" class="social-line__link">Twitter</a></li>
+                        <li class="social-line__item"><a href="" class="social-line__link">Facebook</a></li>
+                        <li class="social-line__item"><a href="" class="social-line__link">LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>       
         </div>
     </header>
@@ -425,9 +427,9 @@
                 </ul>
             </div>
             <div class="signup-field page-footer__signup-field">
-                <b class="signup-field__label" for="e-mail">Підписатись на розсилку</b>
+                <b class="signup-field__label">Підписатись на розсилку</b>
                 <form class="signup-field__form">
-                    <input class="signup-field__input" type="e-mail" placeholder="E-mail" id="e-mail">
+                    <input class="signup-field__input" type="email" placeholder="E-mail" >
                     <button class="btn" type="submit">Підписатись
                         <svg class="btn__icon" width="24" height="24">
                             <use href="./images/sprite.svg#icon-send"></use>
